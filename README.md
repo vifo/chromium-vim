@@ -42,7 +42,7 @@ These extensions do a wonderful job of adding Vim-like keybindings to Google Chr
 | vimport                             | integer                            | set the port to be used with the `editWithVim` insert mode command                        | 8001                                                                        |
 | zoomfactor                          | integer / double                   | the step size when zooming the page in/out                                                | 0.1                                                                         |
 | scalehints                          | boolean                            | animate link hints as they appear                                                         | false                                                                       |
-| hud                                 | boolean                            | show the heads-up-display                                                                 | true                                                                        |
+| hud                                 | boolean                            | show the heads-up-display (HUD), status box in lower right corner                                                                 | true                                                                        |
 | regexp                              | boolean                            | use regexp in find mode                                                                   | true                                                                        |
 | ignorecase                          | boolean                            | ignore search case in find mode                                                           | true                                                                        |
 | linkanimations                      | boolean                            | show fade effect when link hints open and close                                           | false                                                                       |
@@ -141,7 +141,7 @@ unmap h j k l
 " This remaps the default 'f' mapping to the current 'F' mapping
 map f F
 
-" Toggle the current HUD display value
+" Toggle the current HUD (status box in lower right corner) display value
 map <C-h> :set hud!<CR>
 
 " Switch between alphabetical hint characters and numeric hints
